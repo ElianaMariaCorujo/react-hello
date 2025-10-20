@@ -1,11 +1,73 @@
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.traffic-light-wrapper {
+  display: inline-block;
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+}
 
-*/
+#trafficTop {
+  width: 15px;
+  height: 70px;
+  background: black;
+  margin: 0 auto; 
+}
+
+#container {
+  width: 100px;
+  background: black;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.light {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%; 
+  cursor: pointer;
+  opacity: 0.3;
+  transition: all 0.2s ease;
+}
+
+.light.red {
+  background-color: red;
+}
+.light.yellow {
+  background-color: yellow;
+}
+.light.green {
+  background-color: green;
+}
+.light.purple {
+  background-color: purple;
+}
+
+.light.selected {
+  opacity: 1; 
+  box-shadow: 0 0 20px 8px rgba(255, 255, 255, 0.8); 
+}
+
+.light.red.selected {
+  box-shadow: 0 0 25px 10px red;
+}
+.light.yellow.selected {
+  box-shadow: 0 0 25px 10px yellow;
+}
+.light.green.selected {
+  box-shadow: 0 0 25px 10px green;
+}
+.light.purple.selected {
+  box-shadow: 0 0 25px 10px purple; 
+}
+
+.cycle-button, .purple-button {
+  display: block; 
+  margin: 20px auto 0; 
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
